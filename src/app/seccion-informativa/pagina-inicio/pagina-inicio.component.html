@@ -1,0 +1,47 @@
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>Bienvenidos a Nuestra Tienda de Electrónica ElectroMax</h1>
+  <p>Encuentra los mejores productos a los mejores precios</p>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="p-3 bg-light text-center border">
+        <img
+          [src]="'/assets/electro' + productosBuscados[0].id + '.jpg'"
+          class="vinoImg"
+          width="300px"
+          height="200px"
+        />
+        <h2>{{ productosBuscados[0].nombre }}</h2>
+        <p>{{ productosBuscados[0].descripcion }}.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-3 bg-light text-center border">
+        <img
+          [src]="'/assets/electro' + productosBuscados[1].id + '.jpg'"
+          class="vinoImg"
+          width="300px"
+          height="200px"
+        />
+        <h2>{{ productosBuscados[1].nombre }}</h2>
+        <p>{{ productosBuscados[1].descripcion }}.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-3 bg-light text-center border">
+        <img
+          [src]="'/assets/electro' + productosBuscados[4].id + '.jpg'"
+          class="vinoImg"
+          width="300px"
+          height="200px"
+        />
+        <h2>{{ productosBuscados[4].nombre }}</h2>
+        <p>{{ productosBuscados[4].descripcion }}.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<br />

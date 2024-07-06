@@ -1,0 +1,81 @@
+<nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+  <div class="container-fluid">
+    <img
+      src="/assets/logo.png"
+      width="100px"
+      height="100px"
+      style="border-radius: 50%"
+    />
+    <a class="navbar-brand"></a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a
+          class="nav-link active"
+          aria-current="page"
+          [routerLink]="['/paginaInicio']"
+          routerLinkActive="router-link-active"
+          >Inicio</a
+        >
+        <a
+          class="nav-link active"
+          aria-current="page"
+          [routerLink]="['/productos']"
+          routerLinkActive="router-link-active"
+          >Productos</a
+        >
+        <a
+          class="nav-link active"
+          aria-current="page"
+          [routerLink]="['/infoContacto']"
+          routerLinkActive="router-link-active"
+          >Contacto</a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer class="bg-primary text-light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h5>Acerca de Nosotros</h5>
+        <p>
+          Somos una tienda de electrónica dedicada a ofrecer los mejores
+          productos y servicios a nuestros clientes.
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h5>Productos</h5>
+        <ul class="list-unstyled">
+          <li><a class="text-light">Televisores</a></li>
+          <li><a class="text-light">Computadoras</a></li>
+          <li><a class="text-light">Smartphones</a></li>
+          <li><a class="text-light">Accesorios</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled">
+          <li>Tel: (123) 456-7890</li>
+          <li>Email: info&#64;tiendaelectronica.com</li>
+          <li>Dirección: Calle 123, León, México</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Redes Sociales</h5>
+        <ul class="list-unstyled">
+          <li><a class="text-light">Facebook</a></li>
+          <li><a class="text-light">Twitter</a></li>
+          <li><a class="text-light">Instagram</a></li>
+          <li><a class="text-light">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <p>&copy; 2024 Tienda de Electrónica. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

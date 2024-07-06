@@ -1,0 +1,73 @@
+<div class="container my-5">
+  <div class="mb-3">
+    <label for="buscador" class="form-label">Buscar Producto</label>
+    <input
+      type="text"
+      class="form-control"
+      id="buscador"
+      placeholder="Ingrese su búsqueda"
+      (input)="buscarProducto($event)"
+    />
+  </div>
+
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value="Televisor"
+      id="checkbox1"
+      (input)="buscarProducto($event)"
+    />
+    <label class="form-check-label" for="checkbox1"> Televisore </label>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value="Televisor"
+      id="checkbox2"
+      (input)="buscarProducto($event)"
+    />
+    <label class="form-check-label" for="checkbox2"> Computadoras </label>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value="Smartphone"
+      id="checkbox3"
+      (input)="buscarProducto($event)"
+    />
+    <label class="form-check-label" for="checkbox3"> Smartphones </label>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value="tablet"
+      id="checkbox4"
+      (input)="buscarProducto($event)"
+    />
+    <label class="form-check-label" for="checkbox4"> Tablet</label>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    @for (producto of productosBuscados; track $index) {
+    <div class="col-md-4 mb-3">
+      <div class="p-3 bg-light text-center border">
+        <img
+          [src]="'/assets/electro' + producto.id + '.jpg'"
+          class="vinoImg"
+          width="300px"
+          height="250px"
+        />
+        <h2>{{ producto.nombre }}</h2>
+        <p>{{ producto.descripcion }}</p>
+        <p>$ {{ producto.precio }}</p>
+      </div>
+    </div>
+    }
+  </div>
+</div>
